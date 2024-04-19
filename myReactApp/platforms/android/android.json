@@ -4,8 +4,302 @@
     "uninstalled": []
   },
   "config_munge": {
-    "files": {}
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"NfcPlugin\"><param name=\"android-package\" value=\"com.chariotsolutions.nfc.plugin.NfcPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.NFC\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-feature android:name=\"android.hardware.nfc\" android:required=\"false\" />",
+              "count": 1
+            }
+          ],
+          "/manifest/uses-permission": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.BODY_SENSORS"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.INTERNET"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.ACCESS_NETWORK_STATE"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.ACCESS_FINE_LOCATION"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.CAMERA\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.ACCESS_COARSE_LOCATION"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.FLASHLIGHT\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.CAMERA"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.FLASHLIGHT"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.RECORD_AUDIO"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.BLUETOOTH"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.READ_CONTACTS\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.BLUETOOTH_ADMIN"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.READ_CONTACTS"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.SEND_SMS\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.WRITE_CONTACTS"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.RECEIVE_SMS\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.SEND_SMS"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.READ_SMS\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.RECEIVE_SMS"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.RECEIVE_WAP_PUSH\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.READ_SMS"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.RECEIVE_MMS\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.RECEIVE_WAP_PUSH"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.CALL_PHONE\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.RECEIVE_MMS"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.CALL_PHONE"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.READ_PHONE_STATE"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.VIBRATE"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.WAKE_LOCK"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.USE_FINGERPRINT\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.GET_ACCOUNTS"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.USE_FINGERPRINT"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.ACCESS_WIFI_STATE"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.NFC\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.CHANGE_WIFI_STATE"
+              }
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.BODY_SENSORS\" />",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:name": "android.permission.NFC"
+              }
+            }
+          ]
+        }
+      }
+    }
   },
-  "installed_plugins": {},
-  "dependent_plugins": {}
+  "installed_plugins": {
+    "phonegap-nfc": {
+      "PACKAGE_NAME": "com.example.myreactapp"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "phonegap-nfc.NFC",
+      "file": "plugins/phonegap-nfc/www/phonegap-nfc.js",
+      "pluginId": "phonegap-nfc",
+      "runs": true
+    }
+  ],
+  "plugin_metadata": {
+    "phonegap-nfc": "1.2.0"
+  }
 }
